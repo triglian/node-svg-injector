@@ -1,0 +1,19 @@
+Usage: nodeSVGInjector [options] [input.html]
+
+  Options:
+
+  -o, --out ................ output file to write to.
+  -c, --selector ........... CSS Selector for inlining SVGs, defaults to 'img.svg'.
+  -v, --version ............ current nodeSVGInjector version.
+  -h, --help ............... you're looking at it.
+  
+
+  Note: if the script is omitted, nodeSVGInjector will try to read "index.html" from the current directory. If the output file is omitted, the default is [filename].svginjected
+
+  Examples:
+
+  $ nodeSVGInjector index.html
+  $ nodeSVGInjector index.html -o output.html
+  $ nodeSVGInjector index.html -o output.html -c='img.inject-svg'
+
+  For more details see http://github.com/triglian/nodeSVGInjector/
